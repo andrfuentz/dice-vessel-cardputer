@@ -1,0 +1,49 @@
+name: Bug report / Relato de problema
+description: Report a reproducible firmware problem / Relate um problema reproduzível
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: model
+    attributes:
+      label: Cardputer model / Modelo
+      options:
+        - Cardputer original
+        - Cardputer ADV
+        - Other / Outro
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Firmware version / Versão
+      placeholder: v0.4.0-beta
+    validations:
+      required: true
+  - type: input
+    id: expression
+    attributes:
+      label: Dice expression / Expressão
+      placeholder: 2D20+5
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps / Passos para reproduzir
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior / Comportamento observado
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Settings, photos, or videos / Configurações, fotos ou vídeos

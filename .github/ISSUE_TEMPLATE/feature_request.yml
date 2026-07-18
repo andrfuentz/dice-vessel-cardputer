@@ -1,0 +1,29 @@
+name: Feature request / Sugestão
+description: Suggest an improvement / Sugira uma melhoria
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Campaign need / Necessidade na campanha
+      description: What problem would this solve during play? / Que problema isso resolveria durante a partida?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior / Comportamento proposto
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / Alternativas
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Project fit / Alinhamento
+      options:
+        - label: This keeps the core roller fast and simple / Mantém o rolador principal rápido e simples
+          required: true
