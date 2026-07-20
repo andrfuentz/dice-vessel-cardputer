@@ -2,7 +2,7 @@
 
 ## Repository settings
 
-- Name: `dice-vessel`
+- Name: `dice-vessel-cardputer`
 - Visibility: Public
 - Description: `A pocket RPG campaign companion for fast, flexible dice rolls on the M5Stack Cardputer.`
 - Default branch: `main`
@@ -14,7 +14,7 @@
 1. Sign in to GitHub.
 2. Select **New repository**.
 3. Choose your account as owner.
-4. Enter `dice-vessel` as the repository name.
+4. Enter `dice-vessel-cardputer` as the repository name.
 5. Paste the description above.
 6. Select **Public**.
 7. Do **not** add a README, `.gitignore`, or license on GitHub; these already exist locally.
@@ -28,7 +28,7 @@ Open PowerShell inside the local `DiceVessel` folder and run:
 git init -b main
 git add .
 git commit -m "Initial DICE\\VESSEL beta release"
-git remote add origin https://github.com/YOUR-USERNAME/dice-vessel.git
+git remote add origin https://github.com/YOUR-USERNAME/dice-vessel-cardputer.git
 git push -u origin main
 ```
 
@@ -44,20 +44,21 @@ Replace `YOUR-USERNAME` with your GitHub username. GitHub may open a browser win
 6. Confirm that the README displays the screenshots and language link correctly.
 7. Confirm that GitHub identifies the MIT license.
 
-## 4. Publish the first beta release
+## 4. Publish the stable release
 
 1. Open **Releases** on the repository page.
 2. Select **Draft a new release**.
-3. Create the tag `v0.4.0-beta` targeting `main`.
-4. Use the title `DICE\\VESSEL v0.4.0-beta — KEEP ROLLING.`
+3. Create the tag `v1.0.0` targeting `main`.
+4. Use the title `DICE\\VESSEL v1.0.0 — KEEP ROLLING.`
 5. Copy the contents of `RELEASE_NOTES.md` into the description.
 6. Attach these three files:
-   - `release/dicevessel-v0.4-beta-factory.bin`
-   - `release/dicevessel-v0.4-beta-firmware.bin`
+   - `release/dicevessel-v1.0.0-factory.bin`
+   - `release/dicevessel-v1.0.0-firmware.bin`
    - `release/SHA256SUMS.txt`
-7. Select **Set as a pre-release**.
-8. Review the filenames and description.
-9. Select **Publish release**.
+7. Leave **Set as a pre-release** disabled.
+8. Select **Set as the latest release**.
+9. Review the filenames and description.
+10. Select **Publish release**.
 
 ## Final verification
 
@@ -67,5 +68,5 @@ Replace `YOUR-USERNAME` with your GitHub username. GitHub may open a browser win
 - MIT license is detected.
 - Issue templates appear under **New issue**.
 - Factory image downloads from the release.
-- Release is marked as pre-release.
-- Tag is `v0.4.0-beta`.
+- Release is marked as latest and stable.
+- Tag is `v1.0.0`.

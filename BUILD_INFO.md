@@ -1,6 +1,6 @@
-# DICE\\VESSEL v0.4.0-beta build
+# DICE\\VESSEL v1.0.0 build
 
-Compiled on 18 July 2026.
+Compiled on 20 July 2026.
 
 ## Target
 
@@ -15,14 +15,14 @@ Compiled on 18 July 2026.
 
 ## Memory
 
-- RAM: 25,900 / 327,680 bytes — 7.9%
-- Application flash: 524,661 / 3,342,336 bytes — 15.7%
+- RAM: 27,932 / 327,680 bytes — 8.5%
+- Application flash: 540,041 / 3,342,336 bytes — 16.2%
 
 ## Release images
 
 | File | Size | Flash offset | SHA-256 |
 |---|---:|---:|---|
-| `release/dicevessel-v0.4-beta-factory.bin` | 590,560 bytes | `0x0` | `D76F455D7DA51EBA2DB1DC53D6E827C118C1F7A50264584038B0A2C0A33005C5` |
-| `release/dicevessel-v0.4-beta-firmware.bin` | 525,024 bytes | `0x10000` | `5C1081625056E44509385E2F5E00B763E5A26F3522A902EF6816269AD973EB15` |
+| `release/dicevessel-v1.0.0-factory.bin` | 605,936 bytes | `0x0` | `04D8EB9AE89931A74B2EE1D012B029928521E6C514041F2943EC715C338426A9` |
+| `release/dicevessel-v1.0.0-firmware.bin` | 540,400 bytes | `0x10000` | `76C3FEF0DA9B26141F94A129435E4E3402283B454FA04330C00D7B69E8C81408` |
 
-The factory image includes the bootloader, partition table, OTA boot selector, and application. It is the recommended image for a fresh installation.
+The factory image is for a clean installation. The firmware-only image updates an existing installation while preserving settings, named combinations, and history.

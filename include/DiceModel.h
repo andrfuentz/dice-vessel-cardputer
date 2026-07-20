@@ -8,6 +8,8 @@ constexpr uint8_t MAX_TERMS = 12;
 constexpr uint8_t MAX_RESULTS = 64;
 constexpr uint8_t MAX_BODIES = 16;
 
+enum class RollMode : uint8_t { Normal = 0, Advantage = 1, Disadvantage = 2 };
+
 struct DiceTerm {
   int8_t sign = 1;
   uint8_t count = 1;
@@ -19,6 +21,7 @@ struct RollSpec {
   uint8_t termCount = 0;
   int16_t modifier = 0;
   uint8_t diceCount = 0;
+  RollMode mode = RollMode::Normal;
   bool valid = false;
   String error;
 };
@@ -27,18 +30,21 @@ struct DieResult {
   uint16_t sides = 20;
   uint16_t value = 1;
   int8_t sign = 1;
+  bool kept = true;
 };
 
 struct RollResult {
   DieResult dice[MAX_RESULTS];
   uint8_t count = 0;
   int32_t total = 0;
+  RollMode mode = RollMode::Normal;
   String expression;
 };
 
 struct HistoryEntry {
   String expression;
   int32_t total = 0;
+  RollMode mode = RollMode::Normal;
   uint32_t timestampMs = 0;
 };
 

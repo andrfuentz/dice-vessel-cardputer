@@ -11,6 +11,9 @@ struct Body {
   float radius = 9;
   uint16_t sides = 20;
   uint16_t result = 0;
+  uint8_t resultIndex = 0;
+  uint8_t percentilePart = 0;  // 0 normal, 1 tens, 2 units
+  bool kept = true;
   bool settled = false;
   uint32_t revealAt = 0;
 };
@@ -37,6 +40,7 @@ class PhysicsEngine {
   bool decaying_ = false;
   bool coinMode_ = false;
   float impact_ = 0;
+  uint8_t visualCount(const RollSpec& spec) const;
   void solveWalls(Body& b);
   void solvePairs();
 };
